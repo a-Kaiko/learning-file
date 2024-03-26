@@ -21,18 +21,17 @@
 	</style>
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<title>Pour mon nounours</title>
+	<title>A little question</title>
  </head>
  <body>
-    <h1 class="t1">Veux-tu être mon Valentin cette année ?</h1>
-    <img id="img1" class="image1" src="ask.gif" alt="Demande cute" />
+    <h1 class="t1">Do you wanna be my valentine this year ?</h1>
+    <img id="img1" class="image1" src="ask.gif" alt="ask image" />
 	<div class="button-container">
-	 <button id="buttonY" class="button1" type="button" data-inline="true" onclick="yesFunction()">Oui</button >
-	 <button id="buttonN" class="button2" type="button" data-inline="true" onclick="noFunction()">Non</button>
+	 <button id="buttonY" class="button1" type="button" data-inline="true" onclick="yesFunction()">Yes</button >
+	 <button id="buttonN" class="button2" type="button" data-inline="true" onclick="noFunction()">No</button>
 	</div>
 	<div class="text" hidden>
-	 <p>Je t'aime très fort mon nounours, merci d'avoir accepté d'être mon valentin cette année encore.</p>
-	 <p>J'espère que tu passeras une très belle journée, et je te dis à ce soir pour la suite de cette journée qui te réserve encore peut être quelques surprises.. Tu es mon amour de ma vie.</p>
+	 <p>Thanks you!</p>
 	</div>
 	<script>
 	 const button2 = document.querySelector(".button2");
@@ -47,7 +46,7 @@
 		image1.src = "no.gif";
 	}
 	function yesFunction() {
-	  h1.textContent = "Merci mon amour !";
+	  h1.textContent = "For real ?";
 	  image1.src = "yes.gif";
 	  button1.style.display = "none";
 	  button2.style.display = "none";
